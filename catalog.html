@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Барбершоп</title>
+  </head>
+  <body>
+	<header class="main-header">
+		<div class="container"> <!-- центровщик -->
+			<nav class="main-navigation"> <!-- основная навигация -->
+				<a href="#" target="_blank"><img src="img/******.jpg" width="***" height="***" alt="Возврат на страницу 1" class="Home"></a>
+				<ul>
+					<li>
+						<a href="#">Информация</a>	
+					</li>
+					<li>
+						<a href="#">Новости</a>	
+					</li>
+					<li>
+						<a href="#">Прайс-лист</a>	
+					</li>
+					<li>
+						<a href="#">Магазин</a>	
+					</li>
+					<li>
+						<a href="#">Контакты</a>	
+					</li>
+				</ul>				
+			</nav>
+			<div class="user-block"> <!-- залогиниться -->
+				<a class="login" href="#">Вход</a>
+			</div>
+		</div>
+	</header>
+    <main class="container"> <!-- центровщик главного содержания от шапки до футера -->
+		<section class="page-name"> <!--не уверенен что здесь правильтый тег выбрал-->
+			<h1>Средства для ухода</h1>
+				<div class="page-name-navigation">
+					<ul>
+						<li>
+							<a href="#">Главная</a>		
+						</li>
+						<li>
+							<a href="#">Магазин</a>		
+						</li>
+						<li>
+							<a href="#">Средства для ухода</a>
+						</li>		
+					</ul>
+				</div>
+		</section>
+		<div class="index-content"> <!--фильтры и картинки-->
+			<div class="index-content-left"> <!--фильтры-->
+				<div class="index-content-left-top"> <!--Производители-->
+					<form class="filter" action="formdata.php" method="POST"> <!--тут php-->
+						<h2 class="index-content-title">Производители:</h2>
+							<p><label><input type="checkbox" name="bax" checked>Baxter of California</label></p>
+							<p><label><input type="checkbox" name="mr">Mr Natty</label></p>
+							<p><label><input type="checkbox" name="sua" checked>Suavecito</label></p>
+							<p><label><input type="checkbox" name="mal">Malin+Goetz</label></p>
+							<p><label><input type="checkbox" name="mur">Murray's</label></p>
+							<p><label><input type="checkbox" name="ame" checked>American Crew</label></p>
+					</form>
+				</div>
+				<div class="index-content-left-bottom"> <!--Группы товаров:-->
+					<form class="filter" action="formdata.php" method="POST"> <!--тут php-->
+						<h2 class="index-content-title">Группы товаров:</h2>
+							<p><label><input type="radio" name="product" value="yes">БРИТВЕННЫЕ ПРИНАДЛЕЖНОСТИ</label></p>
+							<p><label><input type="radio" name="product" value="yes">СРЕДСТВА ДЛЯ УХОДА</label></p>
+							<p><label><input type="radio" name="product" value="yes">АКСЕССУАРЫ</label></p>
+					</form>
+				</div>
+				<br><br>
+				<a class="button" href="#">ПОКАЗАТЬ</a>
+			</div>
+			<div class="index-content-right"> <!--картинки-->
+				<article class="product-1">
+					<a class="product-img" href="#"><img src="http://placehold.it/150x100"></a>
+						<section class="product-info">
+							<p>Набор для путешествий</p>
+							<p>«BAXTER OF CALIFORNIA»</p>
+							<p>2 900 РУБ. <a class="button" href="#">КУПИТЬ</a></p> <!--в этой плашке не уверен как правильно-->
+						</section>
+				</article>
+				<article class="product-2">
+					<a class="product-img" href="#"><img src="http://placehold.it/150x100"></a>
+						<section class="product-info">
+							<p>Увлажняющий кондиционер</p>
+							<p>«BAXTER OF CALIFORNIA»</p>
+							<p>750 РУБ. <a class="button" href="#">КУПИТЬ</a></p> <!--в этой плашке не уверен как правильно-->
+						</section>
+				</article>
+				<article class="product-3">
+					<a class="product-img" href="#"><img src="http://placehold.it/150x100"></a>
+						<section class="product-info">
+							<p>Гель для волос</p>
+							<p>«SUAVECITO»</p>
+							<p>290 РУБ. <a class="button" href="#">КУПИТЬ</a></p> <!--в этой плашке не уверен как правильно-->
+						</section>
+				</article>	
+				<article class="product-4">
+					<a class="product-img" href="#"><img src="http://placehold.it/150x100"></a>
+						<section class="product-info">
+							<p>Гель для укладки волос</p>
+							<p>«AMERICAN CREW»</p>
+							<p>500 РУБ. <a class="button" href="#">КУПИТЬ</a></p> <!--в этой плашке не уверен как правильно-->
+						</section>
+				</article>
+				<article class="product-5">
+					<a class="product-img" href="#"><img src="http://placehold.it/150x100"></a>
+						<section class="product-info">
+							<p>Гель для волос</p>
+							<p>«AMERICAN CREW»</p>
+							<p>300 РУБ. <a class="button" href="#">КУПИТЬ</a></p> <!--в этой плашке не уверен как правильно-->
+						</section>
+				</article>
+				<article class="product-6">
+					<a class="product-img" href="#"><img src="http://placehold.it/150x100"></a>
+						<section class="product-info">
+							<p>НАБОР ДЛЯ БРИТЬЯ</p>
+							<p>«BAXTER OF CALIFORNIA»</p>
+							<p>3 900 РУБ. <a class="button" href="#">КУПИТЬ</a></p> <!--в этой плашке не уверен как правильно-->
+						</section>
+				</article>
+				<a class="button1" href="#">1</a>	
+				<a class="button2" href="#">2</a>
+				<a class="button3" href="#">3</a>
+				<a class="button4" href="#">4</a>
+			</div>
+		</div>
+	</main>
+	<footer class="main-footer">
+		<div class="container">
+			<section class="footer-contacts">
+				<p>Барбершоп «Бородинский»<br>
+				Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
+				<a href="#">Как нас найти?</a><br>
+          		Телефон: +7 (812) 666-02-66</p>	
+			</section>
+			<section class="footer-social">
+				<p>Давайте дружить!</p>
+          		<a class="social-botton social-btn-vk" href="#">Вконтакте</a>
+          		<a class="social-botton social-btn-fb" href="#">Фейсбук</a>
+          		<a class="social-botton social-btn-inst" href="#">Инстаграм</a>	
+			</section>
+			<section class="footer-copyright">
+				<p>Разработано:</p>
+          		<a class="botton" href="https://htmlacademy.ru">htmlacademy</a>
+			</section>
+		</div>
+	</footer>
+  </body>
+</html>
